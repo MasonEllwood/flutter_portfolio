@@ -14,7 +14,7 @@ class PortfolioHeader extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Image(
                       image: new AssetImage("assets/images/imlistening.gif"),
                       height: 50.0,
@@ -25,7 +25,7 @@ class PortfolioHeader extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.fromLTRB(10.0, 15.0, 10.0, 15.0),
                     child: PortfolioIconButton(
                       onTap: (){
                         print('menu clicked');

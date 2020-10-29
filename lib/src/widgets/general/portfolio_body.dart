@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/widgets/general/portfolio_projects.dart';
-import 'package:portfolio/src/widgets/cards/portfolio_hero.dart';
+import 'package:portfolio/src/widgets/cards/portfolio_hero_mobile.dart';
+import 'package:portfolio/src/widgets/cards/portfolio_hero_desktop.dart';
+import 'package:portfolio/src/widgets/cards/portfolio_projects_desktop.dart';
 
 class PortfolioBody extends StatefulWidget {
   PortfolioBody({Key key}) : super(key: key);
@@ -17,11 +18,11 @@ class _PortfolioBodyState extends State<PortfolioBody> {
         child: Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: ListView(
-            padding: EdgeInsets.only(top: 25, bottom: 25),
+            padding: EdgeInsets.only(top: 0, bottom: 25),
             shrinkWrap: true,
             children: <Widget>[
-              PortfolioHero(),
-              PortfolioProjects(),
+              MediaQuery.of(context).size.width > 1100 ? PortfolioHeroDesktop() : PortfolioHeroMobile(),
+              MediaQuery.of(context).size.width > 1100 ? PortfolioProjectsDesktop() : PortfolioProjectsDesktop(),
             ],
           ),
         ),
