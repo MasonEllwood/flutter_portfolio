@@ -23,22 +23,22 @@ class _PortfolioHeroMobileState extends State<PortfolioHeroMobile> {
               children: [
                 Text(
                   'Mason',
-                  style: PortfolioTextStyles.questrial60px,
+                  style: PortfolioTextStyles.questrialBlack60px,
                 ),
                 Text(
                   'Ellwood',
-                  style: PortfolioTextStyles.questrial60px,
+                  style: PortfolioTextStyles.questrialBlack60px,
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0.0,35.0,0.0,8.0),
                   child: Text(
                     'Websites, Flutter, and Things',
-                    style: PortfolioTextStyles.questrialLightForest24px,
+                    style: PortfolioTextStyles.questrialLightForest25px,
                   ),
                 ),
                 Text(
                   'My name is Mason, and have been in the tech world for a little bit now.',
-                  style: PortfolioTextStyles.questrialLightForest18px,
+                  style: PortfolioTextStyles.questrialLightForest16px,
                 ),
               ],
             ),

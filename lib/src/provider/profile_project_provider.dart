@@ -8,25 +8,7 @@ class ProfileProjectList with ChangeNotifier {
         title: 'Kalimera',
         languages: ['Flutter', 'Dart'],
         plugins: ['cupertino_icons', 'animated_text_kit', 'carousel_slider', 'provider', 'dio'],
-        description: 'Newsroom app built with the Flutter framework. Showcases the ability to search based off of user input, gather information with a get requests from an API, and dynamically update informaiton using the provider model flow',
-        backgroundImage: 'assets/images/Kalimera-showcase-card.jpg',
-        githubUrl: 'https://github.com/MasonEllwood/kalimera_news'
-      ),
-      ProfileProject(
-        id: 1,
-        title: 'Kalimera',
-        languages: ['Flutter', 'Dart'],
-        plugins: ['cupertino_icons', 'animated_text_kit', 'carousel_slider', 'provider', 'dio'],
-        description: 'Newsroom app built with the Flutter framework. Showcases the ability to search based off of user input, gather information with a get requests from an API, and dynamically update informaiton using the provider model flow',
-        backgroundImage: 'assets/images/Kalimera-showcase-card.jpg',
-        githubUrl: 'https://github.com/MasonEllwood/kalimera_news'
-      ),
-      ProfileProject(
-        id: 1,
-        title: 'Kalimera',
-        languages: ['Flutter', 'Dart'],
-        plugins: ['cupertino_icons', 'animated_text_kit', 'carousel_slider', 'provider', 'dio'],
-        description: 'Newsroom app built with the Flutter framework. Showcases the ability to search based off of user input, gather information with a get requests from an API, and dynamically update informaiton using the provider model flow',
+        description: 'Showcases ability to search based off of user input, get requests from an API, and dynamically update informaiton',
         backgroundImage: 'assets/images/Kalimera-showcase-card.jpg',
         githubUrl: 'https://github.com/MasonEllwood/kalimera_news'
       ),
