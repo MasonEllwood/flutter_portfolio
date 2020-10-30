@@ -22,6 +22,9 @@ class _PortfolioBodyState extends State<PortfolioBody> {
             shrinkWrap: true,
             children: <Widget>[
               MediaQuery.of(context).size.width > 1100 ? PortfolioHeroDesktop() : PortfolioHeroMobile(),
+              Container(
+                height: 45.0,
+              ),
               MediaQuery.of(context).size.width > 1100 ? PortfolioProjectsDesktop() : PortfolioProjectsDesktop(),
             ],
           ),

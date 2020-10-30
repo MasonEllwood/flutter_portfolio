@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/styles/portfolio_text_styles.dart';
+import 'package:portfolio/src/styles/portfolio_colors.dart';
 
 class PortfolioHeroDesktop extends StatefulWidget {
   @override
@@ -46,9 +47,17 @@ class _PortfolioHeroDesktopState extends State<PortfolioHeroDesktop> {
           ),
         ),
         Container(
-          color: Colors.black,
           width: MediaQuery.of(context).size.width * 0.50,
           height: MediaQuery.of(context).size.width * 0.40,
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: PortfolioColors.lightpink,
+                offset: Offset(15.0, 15.0),
+              )
+            ],
+            color: Colors.black,
+          ),
           child: Padding(
             padding: const EdgeInsets.all(25.0),
             child: Container(
@@ -61,7 +70,7 @@ class _PortfolioHeroDesktopState extends State<PortfolioHeroDesktop> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         width: 20,
-                      ),
+                      ), 
                     ),
                     child: Image(
                       image: new AssetImage("assets/images/meandpa.jpeg"),

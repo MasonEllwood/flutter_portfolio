@@ -6,7 +6,7 @@ class PortfolioTextStyles {
   static const TextStyle questrialWhite45px = TextStyle(
     fontFamily: 'Questrial',
     fontSize: 45.0,
-    color: PortfolioColors.grey,
+    color: PortfolioColors.white,
   );
 
   static const TextStyle questrialBlack18px = TextStyle(
@@ -40,7 +40,7 @@ class PortfolioTextStyles {
     fontFamily: 'Signika',
     fontSize: 13.0,
     fontWeight: FontWeight.w600,
-    color: PortfolioColors.grey,
+    color: PortfolioColors.white,
   );
 
   static const TextStyle signikaLightPink13px = TextStyle(
