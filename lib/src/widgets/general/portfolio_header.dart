@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/src/widgets/buttons/portfolio_icon_button.dart';
 
+typedef OnTap = void Function();
+
 class PortfolioHeader extends StatelessWidget {
+
+  final OnTap onTap;
+
+  PortfolioHeader({
+    @required this.onTap
+  });
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,9 +36,7 @@ class PortfolioHeader extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(10.0, 15.0, 10.0, 15.0),
                     child: PortfolioIconButton(
-                      onTap: (){
-                        print('menu clicked');
-                      }
+                      onTap: onTap,
                     ),
                   ),
                 ),
