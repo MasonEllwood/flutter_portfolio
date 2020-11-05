@@ -75,26 +75,28 @@ class _PortfolioProjectsDesktopState extends State<PortfolioProjectsDesktop> {
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'languages',
-                                        style: PortfolioTextStyles.questrialWhite25px,
-                                      ),
-                                      for(var item in _getAllProjects[index].languages ) Text(item, style: PortfolioTextStyles.questrialWhite18px),
-                                    ],
-                                  ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'plugins',
-                                        style: PortfolioTextStyles.questrialWhite25px,
-                                      ),
-                                      for(var item in _getAllProjects[index].plugins ) Text(item, style: PortfolioTextStyles.questrialWhite18px),
-                                    ],
-                                  ),
+                                  if (_getAllProjects[index].languages != null)
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'languages',
+                                          style: PortfolioTextStyles.questrialWhite25px,
+                                        ),
+                                        for(var item in _getAllProjects[index].languages ) Text(item, style: PortfolioTextStyles.questrialWhite18px),
+                                      ],
+                                    ),
+                                  if (_getAllProjects[index].plugins != null)
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          'plugins',
+                                          style: PortfolioTextStyles.questrialWhite25px,
+                                        ),
+                                        for(var item in _getAllProjects[index].plugins ) Text(item, style: PortfolioTextStyles.questrialWhite18px),
+                                      ],
+                                    ),
                                 ],
                               ),
                             ),
