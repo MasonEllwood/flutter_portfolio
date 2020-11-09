@@ -5,7 +5,7 @@ class ProfileProject {
   List<dynamic> plugins;
   String description;
   String backgroundImage;
-  String githubUrl;
+  String projectUrl;
 
   ProfileProject({
     this.id,
@@ -14,6 +14,6 @@ class ProfileProject {
     this.plugins,
     this.description,
     this.backgroundImage,
-    this.githubUrl,
+    this.projectUrl,
   });
 }

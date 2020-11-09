@@ -17,12 +17,6 @@ class _PortfolioHomeState extends State<PortfolioHome> {
     return Scaffold(
       key: _scaffoldKey,
       drawer: new NavDrawer(),
-      // appBar: new AppBar(
-      //   leading: new IconButton(
-      //     icon: new Icon(Icons.settings),
-      //     onPressed: () => _scaffoldKey.currentState.openDrawer(),
-      //   ),
-      // ),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: LayoutBuilder(
@@ -30,7 +24,6 @@ class _PortfolioHomeState extends State<PortfolioHome> {
             return Column(
               children: <Widget> [
                 PortfolioHeader(
-                  // onTap: () => _scaffoldKey.currentState.openDrawer(),
                   onTap: () {
                     _scaffoldKey.currentState.openDrawer();
                   },

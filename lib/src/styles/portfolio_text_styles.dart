@@ -8,6 +8,13 @@ class PortfolioTextStyles {
     fontWeight: FontWeight.w600,
     color: PortfolioColors.black,
   );
+  
+  static const TextStyle questrialBlack35px = TextStyle(
+    fontFamily: 'Questrial',
+    fontSize: 35.0,
+    fontWeight: FontWeight.w600,
+    color: PortfolioColors.black,
+  );
 
   static const TextStyle questrialLightForest16px = TextStyle(
     fontFamily: 'Questrial',
@@ -23,9 +30,9 @@ class PortfolioTextStyles {
     fontWeight: FontWeight.w300,
   );
 
-  static const TextStyle questrialWhite60px = TextStyle(
+  static const TextStyle questrialWhite55px = TextStyle(
     fontFamily: 'Questrial',
-    fontSize: 60.0,
+    fontSize: 55.0,
     fontWeight: FontWeight.w600,
     color: PortfolioColors.white,
   );
@@ -43,6 +50,14 @@ class PortfolioTextStyles {
     color: PortfolioColors.white,
     fontWeight: FontWeight.w300,
   );
+  
+  static const TextStyle questrialBlack25px = TextStyle(
+    fontFamily: 'Questrial',
+    fontSize: 25.0,
+    decoration: TextDecoration.underline,
+    color: PortfolioColors.black,
+    fontWeight: FontWeight.w300,
+  );
 
   // static const TextStyle questrialWhite45px = TextStyle(
   //   fontFamily: 'Questrial',
@@ -50,11 +65,11 @@ class PortfolioTextStyles {
   //   color: PortfolioColors.white,
   // );
 
-  // static const TextStyle questrialBlack18px = TextStyle(
-  //   fontFamily: 'Questrial',
-  //   fontSize: 18.0,
-  //   color: PortfolioColors.black,
-  // );
+  static const TextStyle questrialBlack18px = TextStyle(
+    fontFamily: 'Questrial',
+    fontSize: 18.0,
+    color: PortfolioColors.black,
+  );
 
   // static const TextStyle signikaGrey13px = TextStyle(
   //   fontFamily: 'Signika',

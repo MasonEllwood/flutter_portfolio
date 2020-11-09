@@ -19,7 +19,6 @@ class _NavDrawerState extends State<NavDrawer> {
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
             decoration: BoxDecoration(
-              color: Colors.green,
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage('assets/images/meandlane.jpg')
@@ -28,40 +27,41 @@ class _NavDrawerState extends State<NavDrawer> {
           ),
           ListTile(
             leading: Icon(Icons.input),
+            title: Text('Project Code'),
+            onTap: () => {_launchProjectURL()},
+          ),
+          ListTile(
+            leading: Icon(Icons.input),
             title: Text('GitHub'),
-            onTap: () => {_launchURL()},
+            onTap: () => {_launchGITURL()},
           ),
           ListTile(
             leading: Icon(Icons.input),
             title: Text('Linkedin'),
-            onTap: () => {},
+            onTap: () => {_launchLinkedInURL()},
           ),
-          // ListTile(
-          //   leading: Icon(Icons.verified_user),
-          //   title: Text('Profile'),
-          //   onTap: () => {Navigator.of(context).pop()},
-          // ),
-          // ListTile(
-          //   leading: Icon(Icons.settings),
-          //   title: Text('Settings'),
-          //   onTap: () => {Navigator.of(context).pop()},
-          // ),
-          // ListTile(
-          //   leading: Icon(Icons.border_color),
-          //   title: Text('Feedback'),
-          //   onTap: () => {Navigator.of(context).pop()},
-          // ),
-          // ListTile(
-          //   leading: Icon(Icons.exit_to_app),
-          //   title: Text('Logout'),
-          //   onTap: () => {Navigator.of(context).pop()},
-          // ),
         ],
       ),
     );
   }
-  _launchURL() async {
-    const url = 'https://flutter.io';
+  _launchProjectURL() async {
+    const url = 'https://github.com/MasonEllwood/flutter_portfolio';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+  _launchGITURL() async {
+    const url = 'https://github.com/MasonEllwood';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+  _launchLinkedInURL() async {
+    const url = 'https://www.linkedin.com/in/mason-ellwood-013400111';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

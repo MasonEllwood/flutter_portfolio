@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/src/styles/portfolio_text_styles.dart';
 import 'package:provider/provider.dart';
 import 'package:portfolio/src/provider/profile_project_provider.dart';
-// import 'package:portfolio/src/styles/portfolio_text_styles.dart';
 import 'package:portfolio/src/styles/portfolio_colors.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioProjectsDesktop extends StatefulWidget {
   @override
@@ -16,7 +16,6 @@ class _PortfolioProjectsDesktopState extends State<PortfolioProjectsDesktop> {
 
     ProfileProjectList _projectList = Provider.of<ProfileProjectList>(context);
     List<dynamic> _getAllProjects = _projectList.getAllProjects();
-
     return ListView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
@@ -25,7 +24,7 @@ class _PortfolioProjectsDesktopState extends State<PortfolioProjectsDesktop> {
         return GestureDetector(
           onTap: (){
             _projectList.selected = index;
-            Navigator.pushNamed(context, '/inner');
+            _launchProjectURL(_getAllProjects[_projectList.selected].projectUrl);
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -56,21 +55,21 @@ class _PortfolioProjectsDesktopState extends State<PortfolioProjectsDesktop> {
                       height: MediaQuery.of(context).size.width * 0.25,
                       margin: EdgeInsets.symmetric(horizontal: 0.0, vertical: 30),
                       child: Padding(
-                        padding: const EdgeInsets.all(25.0),
+                        padding: const EdgeInsets.all(15.0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               _getAllProjects[index].title,
-                              style: PortfolioTextStyles.questrialWhite60px,
+                              style: PortfolioTextStyles.questrialWhite55px,
                             ),
                             Text(
                               _getAllProjects[index].description,
                               style: PortfolioTextStyles.questrialWhite18px,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 20),
+                              padding: const EdgeInsets.only(top: 10),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,4 +112,14 @@ class _PortfolioProjectsDesktopState extends State<PortfolioProjectsDesktop> {
       }
     );
   }
+
+  _launchProjectURL(projectUrl) async {
+    String url = projectUrl;
+      if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+  
 }

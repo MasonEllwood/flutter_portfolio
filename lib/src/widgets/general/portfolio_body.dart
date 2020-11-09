@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/src/widgets/cards/portfolio_hero_mobile.dart';
 import 'package:portfolio/src/widgets/cards/portfolio_hero_desktop.dart';
 import 'package:portfolio/src/widgets/cards/portfolio_projects_desktop.dart';
+import 'package:portfolio/src/widgets/cards/portfolio_projects_mobile.dart';
 
 class PortfolioBody extends StatefulWidget {
   PortfolioBody({Key key}) : super(key: key);
@@ -25,7 +26,7 @@ class _PortfolioBodyState extends State<PortfolioBody> {
               Container(
                 height: 45.0,
               ),
-              MediaQuery.of(context).size.width > 1100 ? PortfolioProjectsDesktop() : PortfolioProjectsDesktop(),
+              MediaQuery.of(context).size.width > 1100 ? PortfolioProjectsDesktop() : PortfolioProjectsMobile(),
             ],
           ),
         ),
