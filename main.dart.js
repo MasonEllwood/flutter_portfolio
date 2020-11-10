@@ -48054,7 +48054,7 @@ $1:function(a){switch(a.a){case"/":return N.a0W(new K.mj(null),a)
 case"/":default:return N.a0W(new K.mj(null),a)}},
 $S:300}
 F.Nv.prototype={
-$1:function(a){return new N.iP(H.c([new S.qs("Kalimera",["Flutter","Dart"],["cupertino_icons","animated_text_kit","carousel_slider","provider","dio"],"Showcases ability to search based off of user input, get requests from an API, and dynamically update informaiton","assets/images/Kalimera-showcase-card.jpg","https://github.com/MasonEllwood/kalimera_news"),new S.qs("AWS Cloud Practitioner",null,null,"Issued Jun 2019. Expires Jun 2022. Credential ID: V8435DP1JFRQQYG9","assets/images/AWS-showcase-card.jpg",null)],t.kC),new P.by(t.V))},
+$1:function(a){return new N.iP(H.c([new S.qs("Kalimera",["Flutter","Dart"],["cupertino_icons","animated_text_kit","carousel_slider","provider","dio"],"Showcases ability to search based off of user input, get requests from an API, and dynamically update informaiton","https://raw.githubusercontent.com/MasonEllwood/MasonEllwood.github.io/main/assets/assets/images/Kalimera-showcase-card.jpg","https://github.com/MasonEllwood/kalimera_news"),new S.qs("AWS Cloud Practitioner",null,null,"Issued Jun 2019. Expires Jun 2022. Credential ID: V8435DP1JFRQQYG9","https://github.com/MasonEllwood/MasonEllwood.github.io/blob/main/assets/assets/images/AWS-showcase-card.jpg?raw=trueR",null)],t.kC),new P.by(t.V))},
 $S:301}
 S.qs.prototype={}
 K.mj.prototype={
