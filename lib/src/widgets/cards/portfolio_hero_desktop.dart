@@ -73,7 +73,7 @@ class _PortfolioHeroDesktopState extends State<PortfolioHeroDesktop> {
                       ), 
                     ),
                     child: Image(
-                      image: new AssetImage("../assets/images/meandpa.jpeg"),
+                      image: new AssetImage("assets/images/meandpa.jpeg"),
                       height: MediaQuery.of(context).size.width * 0.30,
                     ),
                   ),
