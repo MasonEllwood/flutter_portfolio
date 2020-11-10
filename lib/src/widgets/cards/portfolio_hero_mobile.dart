@@ -60,7 +60,7 @@ class _PortfolioHeroMobileState extends State<PortfolioHeroMobile> {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
-                            "assets/images/meandpa.jpeg"), 
+                            "../assets/images/meandpa.jpeg"), 
                             fit: BoxFit.cover,
                             alignment: Alignment.topCenter,
                         )

@@ -25,7 +25,7 @@ class PortfolioHeader extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Image(
-                      image: new AssetImage("./assets/images/imlistening.gif"),
+                      image: new AssetImage("../assets/images/imlistening.gif"),
                       height: 50.0,
                       width: 50.0,
                     ),
