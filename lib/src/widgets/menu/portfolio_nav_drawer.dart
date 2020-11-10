@@ -21,7 +21,7 @@ class _NavDrawerState extends State<NavDrawer> {
             decoration: BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: AssetImage('assets/images/meandlane.jpg')
+                image: AssetImage('./assets/images/meandlane.jpg')
               )
             ),
           ),
