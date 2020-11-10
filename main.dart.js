@@ -48104,13 +48104,13 @@ n=F.aP(b,!1).a
 s=F.aP(b,!1).a
 r=H.c([new O.dX(0,C.li,new P.r(15,15),0)],t.ec)
 q=new Y.dc(C.k,20,C.I)
-return T.Zy(H.c([o,M.c1(p,new T.bX(C.iC,M.c1(p,T.ds(H.c([M.c1(p,U.a19(F.aP(b,!1).a.a*0.3,new L.ia("assets/images/meandpa.jpeg"),p),C.n,p,p,new S.cT(p,p,new F.cq(q,q,q,q),p,p,p,C.L),p,p,p,p,p,p,p)],m),C.bx,C.bN,C.S),C.n,C.j,p,p,p,p,p,p,p,p,p),p),C.n,p,p,new S.cT(C.k,p,p,p,r,p,C.L),p,s.a*0.4,p,p,p,p,n.a*0.5)],m),C.bx,C.bk,C.S)}}
+return T.Zy(H.c([o,M.c1(p,new T.bX(C.iC,M.c1(p,T.ds(H.c([M.c1(p,U.a19(F.aP(b,!1).a.a*0.3,new L.ia("../assets/images/meandpa.jpeg"),p),C.n,p,p,new S.cT(p,p,new F.cq(q,q,q,q),p,p,p,C.L),p,p,p,p,p,p,p)],m),C.bx,C.bN,C.S),C.n,C.j,p,p,p,p,p,p,p,p,p),p),C.n,p,p,new S.cT(C.k,p,p,p,r,p,C.L),p,s.a*0.4,p,p,p,p,n.a*0.5)],m),C.bx,C.bk,C.S)}}
 T.qp.prototype={
 aB:function(){return new T.E8(C.l)}}
 T.E8.prototype={
 J:function(a,b){var s,r,q=null,p=F.aP(b,!1).a,o=t.Y
 p=M.c1(q,new T.bX(C.uR,T.ds(H.c([L.c_("Mason",C.kF),L.c_("Ellwood",C.kF),new T.bX(C.oL,L.c_("Websites, Flutter, and Things",C.r9),q),L.c_(u.d,C.ra)],o),C.az,C.bN,C.S),q),C.n,C.j,q,q,q,q,q,q,q,q,p.a)
-s=X.Iq(C.rw,C.fJ,new L.ia("assets/images/meandpa.jpeg"))
+s=X.Iq(C.rw,C.fJ,new L.ia("../assets/images/meandpa.jpeg"))
 r=F.aP(b,!1).a
 return T.ds(H.c([p,M.c1(q,new T.bX(C.iC,M.c1(q,new T.bX(C.uV,M.c1(q,new T.bX(C.oM,M.c1(q,q,C.n,q,q,new S.cT(q,s,q,q,q,q,C.L),q,F.aP(b,!1).a.a*0.5,q,q,q,q,r.a),q),C.n,C.k,q,q,q,q,q,q,q,q,q),q),C.n,C.j,q,q,q,q,q,q,q,q,q),q),C.n,C.k,q,q,q,q,q,q,q,q,q)],o),C.bx,C.bk,C.S)}}
 G.qq.prototype={
@@ -48205,12 +48205,12 @@ J:function(a,b){var s=null,r=F.aP(b,!1).a.a>1100?new E.qo(s):new T.qp(s),q=M.c1(
 return new T.wQ(1,C.lr,M.c1(s,new T.bX(new V.ax(0,0,0,0),B.a1n(H.c([r,q,F.aP(b,!1).a.a>1100?new G.qq(s):new Q.qr(s)],t.Y),new V.ax(0,0,0,25),!0),s),C.n,s,s,s,s,s,s,s,s,s,s),s)}}
 O.yI.prototype={
 J:function(a,b){var s=null,r=t.Y
-return Q.Zz(!0,M.c1(s,T.ds(H.c([T.mL(C.fH,H.c([new T.fc(C.rx,s,s,new T.bX(C.uP,U.a19(50,new L.ia("assets/images/imlistening.gif"),50),s),s),new T.fc(C.kY,s,s,new T.bX(C.uQ,new R.yJ(this.c,s),s),s)],r),C.d4)],r),C.bx,C.bk,C.S),C.n,C.j,s,s,s,s,s,s,s,s,s),C.b8,!0)}}
+return Q.Zz(!0,M.c1(s,T.ds(H.c([T.mL(C.fH,H.c([new T.fc(C.rx,s,s,new T.bX(C.uP,U.a19(50,new L.ia("../assets/images/imlistening.gif"),50),s),s),new T.fc(C.kY,s,s,new T.bX(C.uQ,new R.yJ(this.c,s),s),s)],r),C.d4)],r),C.bx,C.bk,C.S),C.n,C.j,s,s,s,s,s,s,s,s,s),C.b8,!0)}}
 N.pZ.prototype={
 aB:function(){return new N.Dn(C.l)}}
 N.Dn.prototype={
 J:function(a,b){var s=null,r=L.c_("Check it all out.",A.rq(s,s,C.j,s,s,s,s,s,s,s,s,25,s,s,s,s,!0,s,s,s,s,s,s))
-return new Z.wA(B.a1n(H.c([new T.wC(new S.cT(s,X.Iq(C.b4,C.fJ,new L.ia("assets/images/meandlane.jpg")),s,s,s,s,C.L),r,s),Q.Z8(L.L2(C.lv,s,s),new N.V2(this),L.c_("Project Code",s)),Q.Z8(L.L2(C.lv,s,s),new N.V3(this),L.c_("GitHub",s)),Q.Z8(L.L2(C.lv,s,s),new N.V4(this),L.c_("Linkedin",s))],t.Y),C.b8,!1),s)},
+return new Z.wA(B.a1n(H.c([new T.wC(new S.cT(s,X.Iq(C.b4,C.fJ,new L.ia("../assets/images/meandlane.jpg")),s,s,s,s,C.L),r,s),Q.Z8(L.L2(C.lv,s,s),new N.V2(this),L.c_("Project Code",s)),Q.Z8(L.L2(C.lv,s,s),new N.V3(this),L.c_("GitHub",s)),Q.Z8(L.L2(C.lv,s,s),new N.V4(this),L.c_("Linkedin",s))],t.Y),C.b8,!1),s)},
 kO:function(){var s=0,r=P.ac(t.z)
 var $async$kO=P.a7(function(a,b){if(a===1)return P.a9(b,r)
 while(true)switch(s){case 0:s=5
